@@ -24,7 +24,9 @@ func main() {
 	for numeroDeElementos > 0 {
 		numeroDeElementos -= 1.
 
-		defer fmt.Println(primeiroTermo*(math.Pow(razao, numeroDeElementos)))
+		sequencia := primeiroTermo*(math.Pow(razao, numeroDeElementos))
+
+		defer fmt.Print("Nossa sequência fica: ", sequencia)
 	}   
 
 	
