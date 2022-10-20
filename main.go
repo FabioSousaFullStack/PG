@@ -26,7 +26,7 @@ func main() {
 
 		sequencia := primeiroTermo*(math.Pow(razao, numeroDeElementos))
 
-		defer fmt.Print("Nossa sequência fica: ", sequencia)
+		defer fmt.Print(sequencia, " ")
 	}   
 
 	
