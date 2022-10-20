@@ -7,7 +7,7 @@ import (
 
 func main() {
 	fmt.Println("")
-	fmt.Println("-----------------------------PROGRESSÃO GEOMÉTRICA-----------------------------------")
+	fmt.Println("-----------------------------CALCULADORA DE PROGRESSÃO GEOMÉTRICA-----------------------------------")
 
 	var primeiroTermo float64
 	fmt.Print("Digite o primeiro termo: ")
@@ -21,13 +21,21 @@ func main() {
 	fmt.Print("Digite o número de elementos: ")
 	fmt.Scan(&numeroDeElementos)
 
-	for numeroDeElementos > 0 {
-		numeroDeElementos -= 1.
+	var expoente float64
 
-		sequencia := primeiroTermo*(math.Pow(razao, numeroDeElementos))
+	sequencia := []float64{}
 
-		defer fmt.Print(sequencia, " ")
+	for expoente < numeroDeElementos {
+		expoente += 1
+
+		TermoGeral := primeiroTermo*(math.Pow(razao, expoente))
+
+		sequencia = append(sequencia, TermoGeral)
+		
 	}   
+
+	fmt.Println("Sequência ", sequencia)
 
 	
 }
+
