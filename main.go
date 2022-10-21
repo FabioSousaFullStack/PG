@@ -45,7 +45,7 @@ func main() {
 
 
 
-	fmt.Println("-------------------TERMO GERAL-------------------------------------------")
+	fmt.Println("------------------------TERMO GERAL-------------------------------------------")
 	fmt.Println("")
 	fmt.Print("Digite a posição do elemento da pg que gostaria de consultar: ")
 	fmt.Scan(&expoente)
