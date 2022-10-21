@@ -52,7 +52,7 @@ func main() {
 	termoGeral := primeiroTermo*(math.Pow(razao, expoente - 1))
 	
 	fmt.Println("")
-	fmt.Println("O elemento que ocupa a posição", expoente , " é o ", termoGeral)
+	fmt.Println("O elemento que ocupa a posição", expoente,"ª é o ", termoGeral)
 	fmt.Println("")
 	fmt.Println("------------------O SISTEMA AGRADECE ESPERO QUE TENHA APRENDIDO----------")
 	fmt.Println("")
